@@ -1,0 +1,2 @@
+# kobash
+simple bash application
