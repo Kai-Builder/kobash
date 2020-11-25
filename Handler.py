@@ -1,7 +1,5 @@
-# Handler For Kobash 1.0
-from KoBashToolkit.sharedtoolkits.buildTools.cus import BuildTools
+from KoBashToolkit.sharedtoolkits.buildTools.cus import *
 
-BuildTools.NewPlugin() # Generate Plugin.json
 
-BuildTools.IDE('vscode')
 
+BuildTools.NewPlugin()

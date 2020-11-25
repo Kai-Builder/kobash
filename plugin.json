@@ -1,0 +1,5 @@
+{
+
+	"MyAddonName": "TestName",
+	"LocalDependencies": "KoBashToolkit.engine.enginestart"
+}

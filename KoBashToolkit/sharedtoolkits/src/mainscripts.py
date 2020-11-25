@@ -15,7 +15,11 @@ class PluginManager():
         def OnWizardError(errortype, gen):
             if errortype == 'Crash':
                 raise LookupError
+            if errortype == 'Import Error':
+                raise ImportError
+            
             """
             Generates WizardError.
             """
             
+PluginManager.PluginWizard.StartWizard('hello', 'pipe install', 'also pipe', 'gg', '3 hours', True)
