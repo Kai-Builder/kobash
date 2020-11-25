@@ -8,4 +8,5 @@ class PythonCompiler():
                         print('+1 Strength')
 
     class Reacher():
+        r_strength = 50
         

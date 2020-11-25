@@ -23,5 +23,7 @@ class OperionSetup():
     Oper_helpCmd = 'op help'
     Oper_crust = 'op __crust__'
     Oper_crouton = 'op devConsole --InPrompt'
+    Oper_info = 'op help Info'
 
-
+class PyGo():
+    pygo_install = 'sudok install '

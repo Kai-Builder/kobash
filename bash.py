@@ -1,5 +1,6 @@
 from datetime import datetime
-from sub.linx import functions
+from sub.linx import *
+from checkers.easycompil import *
 import time
 import sys
 import random
