@@ -10,6 +10,7 @@ class External():
     e_secondShort = '$$off$$'
     e_Write_Library = 'ext WriteLib'
     e_write_second = '$sysWri$'
+    e_Libary_View = '$std getlib'
     class extLib():
         def Here(ga):
             gathered = True
