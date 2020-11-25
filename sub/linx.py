@@ -26,4 +26,11 @@ class OperionSetup():
     Oper_info = 'op help Info'
 
 class PyGo():
-    pygo_install = 'sudok install '
+    pygo_install = 'sudok install PyGo'
+    pygo_test = 'pygo __test__' # Test If PyGo Works.
+
+
+class IntTerm():
+    int_help = 'help'
+    int_printback = '**back'
+    int_EnableMessageOnStart = '&echoStart'

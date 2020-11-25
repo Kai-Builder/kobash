@@ -109,6 +109,16 @@ while True:
         a = Path("Operion 1.230.0.bashExtension")
         if a.exists():
             print('op __crust__ -- Creates a Struct based on User input')
-            print('op ')
+            print('op devConsole --InPrompt -- Integrated Shell Inside KoBash.')
+            print('op help info -- Build info.')
         else:
             print('op is not recognized as a .bashExtension File.')
+
+    elif i.strip() == OperionSetup.Oper_crouton:
+        print('Integrated Shell 1.0.\nMade For Kobash.')
+        while True:
+            o = input('$ { ')
+            if o.strip() == IntTerm.int_help:
+                print('**back -- Prints Back What user Says After execution.\n&echostart -- Startup Message.')
+    else:
+        print(i + ' is not recognized as a cmd, .bashExtension, External File, Or Operable Program.')
