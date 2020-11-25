@@ -11,8 +11,13 @@ from pathlib import Path
 path = os.getcwd()
 
 bqui = ['What did you do today?', 'What could you do better?', 'Name Every Sport.', 'have you tried sudok?', 'This Bash Is Used as a Fast little terminal project i made.']
-
-print("Saved.")
+a = Path("UserLogin.py")
+if a.exists():
+    from UserLogin import *
+    print('Hello, ' + user + ". ")
+else:
+    print('You do not Have a account Made. To Make one, Say login.')
+    print('(this message goes away when you sign in!)')
 while True:
     i = input(path + '\private> $ .. ')
     if i.strip() == functions.k_bash_Init:
@@ -119,5 +124,14 @@ while True:
             o = input('$ { ')
             if o.strip() == IntTerm.int_help:
                 print('**back -- Prints Back What user Says After execution.\n&echostart -- Startup Message.')
+    elif i.strip() == 'login':
+        x = input('Choose a username: ')
+        y = input('Choose a password: ')
+        print('Logging you in...')
+        time.sleep(random.randint(0,20))
+        print('Thank You For Signing into KoBash.')
+        a = open('UserLogin.py', 'w')
+        a.write('user = "' + x + '"\npassw = "' + y + '"')
+        a.close()
     else:
         print(i + ' is not recognized as a cmd, .bashExtension, External File, Or Operable Program.')
