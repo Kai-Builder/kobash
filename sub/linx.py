@@ -18,5 +18,10 @@ class sudokLib():
     s_graph = 'sudok graph', 'sudok diag'
     s_Keepover = 'sudok KeepHere'
 
-class OperaionSetup():
-    
+class OperionSetup():
+    Oper_Install = 'sudok install operion'
+    Oper_helpCmd = 'op help'
+    Oper_crust = 'op __crust__'
+    Oper_crouton = 'op devConsole --InPrompt'
+
+
