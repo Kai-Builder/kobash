@@ -97,13 +97,18 @@ while True:
         time.sleep(3)
         print('Installing Operion Dir..')
         time.sleep(random.randint(5,10))
-        os.mkdir("Operion 1.230.0")
+        a = open('Operion 1.230.0.bashExtension', "w")
+        a.write("Gathered Data")
+        a.close()
         time.sleep(random.randint(5,10))
         print('Operion directory Created.')
         time.sleep(random.randint(5,10))
         print('Polishing Files..')
         time.sleep(random.randint(5,10))
     elif i.strip() == OperionSetup.Oper_helpCmd:
-        a = Path("Operion 1.230.0")
+        a = Path("Operion 1.230.0.bashExtension")
         if a.exists():
-            print('op __crust__ -- Creates a Str')
+            print('op __crust__ -- Creates a Struct based on User input')
+            print('op ')
+        else:
+            print('op is not recognized as a .bashExtension File.')
