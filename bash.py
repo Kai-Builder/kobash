@@ -72,5 +72,6 @@ while True:
         print('[crout updt sudok] -- Updates Sudok.')
         print('Every functionality starts with SUDOK')
     elif i.strip() == functions.k_help:
-        print('"sudok" -- sudok Libary\n"cppLib" -- Reach out to the C++ Library.')
-        print()
+        print('"sudok" -- sudok Libary\n"cppLib" -- Reach out to the C++ Library.\n-------WHERE ALL THE STUFF IS AT---------------\n\nsudok -- Integrated Libary with utils and devkit built in')
+    elif i.strip() == OperionSetup.Oper_Install:
+        print('')
