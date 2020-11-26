@@ -28,6 +28,8 @@ class OperionSetup():
 class PyGo():
     pygo_install = 'sudok install PyGo'
     pygo_test = 'pygo __test__' # Test If PyGo Works.
+    pygo_help = 'pygo _manual_'
+    
 
 
 class IntTerm():

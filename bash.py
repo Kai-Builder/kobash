@@ -1,5 +1,5 @@
 from datetime import datetime
-from sub.linx import *
+from sudok.linx import *
 import time
 import sys
 import random
@@ -16,8 +16,8 @@ if a.exists():
     from UserLogin import *
     print('Hello, ' + user + ". ")
 else:
-    print('You do not Have a account Made. To Make one, Say login.')
-    print('(this message goes away when you sign in!)')
+    print('You Have Not signed into An account yet. This Copy Is Unliscenced.')
+    print('You can make one by saying login.')
 while True:
     i = input(path + '\private> $ .. ')
     if i.strip() == functions.k_bash_Init:
@@ -48,15 +48,27 @@ while True:
                 time.sleep(2)
                 print('Finished! Retry this by saying sudok scripts')
     elif i.strip() == functions.k_Influx:
-        print("Recreating Influx..")
-        time.sleep(3)
-        print('Data Logging..')
-        time.sleep(5)
-        print("ReBuilding...")
-        print("(Rebuilding can take up to a minute or two, so in the meantime)")
-        print(random.choice(bqui))
-        time.sleep(random.randint(0,120))
-        print('All Scripts Have Been ReLoaded With Exit Code -1')
+        a = Path("UserLogin.py")
+        if a.exists():
+            from UserLogin import *
+            print('You Must Log In With Your Correct UserName And Password Before Proceeding.')
+            x = input('.. ')
+            y = input('.. ')
+            if x == user and y == passw:
+                print('Successfully Logged Into Influx Mode. Restarting')
+                print("Recreating Influx..")
+                time.sleep(3)
+                print('Data Logging..')
+                time.sleep(5)
+                print("ReBuilding...")
+                print("(Rebuilding can take up to a minute or two, so in the meantime)")
+                print(random.choice(bqui))
+                time.sleep(random.randint(0,120))
+                print('All Scripts Have Been ReLoaded With Exit Code -1')
+            else:
+                print("Invalid UserName. Quitting Influx..")
+        else:
+            print('Unliscenced Copy. Quitting Influx.')
     elif i.strip() == functions.k_Path + " hidden":
         print('Successfully Pathed to' + path + "\.hidden")
     elif i.strip() == functions.k_scrap_write:
@@ -133,5 +145,43 @@ while True:
         a = open('UserLogin.py', 'w')
         a.write('user = "' + x + '"\npassw = "' + y + '"')
         a.close()
+    elif i.strip() == '{.bashExtension execute --Program5':
+        i = input('.. ')
+        a = Path(i)
+        if a.exists():
+            print('Loading User Defined Scripts..')
+            time.sleep(random.randint(1,20))
+            print('')
+    elif i.strip() == PyGo.pygo_install:
+        print('Gathering Pygo..')
+        time.sleep(4)
+        print('Tasks')
+        print('1. Build PyGo')
+        print('2. Define Pygo ScriptPATH')
+        time.sleep(6)
+        print('PYGO.DATA')
+        time.sleep(random.randint(3, 4))
+        print('PYG.LIB')
+        time.sleep(random.randint(1, 9))
+        print("ScriptLib.h")
+        time.sleep(random.randint(1, 3))
+        print('Letters.')
+        time.sleep(random.randint(2, 4))
+        time.sleep(random.randint(3, 9))
+        print('Finished.')
+        print('Defining ScriptPath..')
+        time.sleep(random.randint(4, 13))
+        print('Finished!')
+        A = open('PygO.kobash', 'w')
+        A.write("Pygo.scriptable == True")
+        A.close()
+
+
+    elif i.strip() == PyGo.pygo_test:
+        u = Path("PygO.kobash")
+        if u.exists():
+            print('Thank you for installing pygo.')
+        else:
+             print(i + ' is not recognized as a cmd, .bashExtension, External File, .kobash, Or Operable Program.')
     else:
         print(i + ' is not recognized as a cmd, .bashExtension, External File, Or Operable Program.')

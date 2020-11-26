@@ -1,3 +1,5 @@
+import os
+
 class BuildTools():
     def NewPlugin():
         a = open('plugin.json', "w")
@@ -18,5 +20,7 @@ class BuildTools():
         i = open('MyPlugin.py', "w")
         i.write('from KoBashToolkit.sharedtoolkits.cus import BuildTools as Build\n\n\ndef Plugin():\n\tBuild.IDE("vscode") # Change to what you want\n\tBuild.NewPlugin()')
         i.close()
-
+    def EnCryp():
+        os.mkdir(".Net Encryption")
+        
 
