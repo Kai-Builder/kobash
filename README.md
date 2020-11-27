@@ -55,7 +55,12 @@ Now All you need to do is Start Scripting! Here Are some sample Libraries For yo
 
 
 
-
+# Current Version Patch Notes
+- Fixed Bugs 
+- LintLib
+- Now When you type '' it doesn't Do the error message.
+- Finally Polished Addon Building! 
+- Updated Integrated Libaries, PyGo, Operion, KoBashToolKit.
 # API REFERENCE
 
 - sudok -- `sudok` is the main Module Used for importing, Installing, Building, And using the terminal.
