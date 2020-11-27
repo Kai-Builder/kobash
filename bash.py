@@ -18,6 +18,12 @@ if a.exists():
     print('FROM 11/26 TO 11/30 NO MORE VERSIONS WILL BE UPDATED AND SUPPORT WILL END UNTIL AFTER.')
     print('THE REASON IS THAT I NEED TO UPDATE THE LOGIN SYSTEM AND THE WAY DATA IS EXCHANGED. THANKS!')
     time.sleep(1)
+    u = Path("operion.kb")
+    if u.exists():
+        print('Running Operion 1.23.0')
+    i = Path("pygo.kobash")
+    if i.exists():
+        print('PyGo Powered By ScriptLib.')
     print('full info in either DOCS >> Support >> supportIssues OR say loginIssues')
     print('Hello, ' + user + ". How are you?")
 else:
