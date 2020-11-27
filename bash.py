@@ -152,14 +152,6 @@ while True:
             print('op help info -- Build info.')
         else:
             print('op is not recognized as a .bashExtension File.')
-
-    elif i.strip() == OperionSetup.Oper_crouton:
-        a = Path("operion")
-        print('Integrated Shell 1.0.\nMade For Kobash.')
-        while True:
-            o = input('$ { ')
-            if o.strip() == OperionSetup.Oper_helpCmd:
-                print('**back -- Prints Back What user Says After execution.\n&echostart -- Startup Message.')
     elif i.strip() == 'login':
         x = input('Choose a username: ')
         y = input('Choose a password: ')
@@ -237,5 +229,36 @@ while True:
 
     elif i.strip() == '':
         print('Nothing.')
+    elif i.strip() == OperionSetup.Oper_crouton:
+        print('Unloading Console Scripts...')
+        time.sleep(random.randint(1, 10))
+        print('Operion Library ppsc')
+        time.sleep(random.randint(1, 10))
+        print('toolkit library KoBash')
+        time.sleep(random.randint(1, 10))
+        print("Starting Python..")
+        time.sleep(random.randint(1, 16))
+        print('Operion Console 1.0.')
+        print('For Help say')
+        print('opc help')
+        while True:
+            a = input(path + "\OperionLib\Scripts\OPERION_1.332.334.5.3.f.2020> ")
+            if a.strip() == 'opc help':
+                print('Operion Lib 1.0')
+                print('op __path__')
+            elif a.strip() == 'op __path__':
+                print('path to?')
+                filetopath = input('> {')
+    elif i.strip() == 'opc':
+        print("Operion Console. Made For Kobash 1.3")
+        while True:
+            a = input(path + "\OperionLib\Scripts\OPERION_1.332.334.5.3.f.2020> ")
+            if a.strip() == 'opc help':
+                print('Operion Lib 1.0')
+                print('op __path__')
+            elif a.strip() == 'op __path__':
+                print('path to?')
+                filetopath = input('> {')
+
     else:
         print(i + ' is not recognized as a cmd, .kb, External File, Or Operable Program.')

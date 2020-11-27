@@ -32,6 +32,7 @@ class OperionSetup():
     Oper_info = 'op help Info'
     oper_DisplayName = 'Operion Lib. -- 1.0'
     oper_Description = 'Operion Library Contains Easier Prompt Source Access'
+    
 
 class PyGo():
     pygo_install = 'sudok install PyGo'
