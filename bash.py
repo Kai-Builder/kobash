@@ -203,6 +203,6 @@ while True:
         print('Did you Mean help?')
 
     elif i.strip() == '':
-        print('Nothing Has Been Detected.')
+        print('Nothing.')
     else:
         print(i + ' is not recognized as a cmd, .kb, External File, Or Operable Program.')
