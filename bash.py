@@ -7,7 +7,7 @@ sys.version
 op = datetime.now()
 import os
 from pathlib import Path
-
+g = ['h', 'e', 'l', 'p']
 path = os.getcwd()
 
 bqui = ['What did you do today?', 'What could you do better?', 'Name Every Sport.', 'have you tried sudok?', 'This Bash Is Used as a Fast little terminal project i made.']
@@ -188,7 +188,21 @@ while True:
     elif i.strip() == 'sudok alternative':
         print('Sudok-Like Extensions (to Sign up go to DOC_2.html.)')
         print("1. Pygo -- " + str(PyGo.pygo_Description) + "")
-        print('Operion -- ' + str(OperionSetup.oper_Description))
-        print('ToolKitBash -- ')
+        print('2. Operion -- ' + str(OperionSetup.oper_Description))
+        print('3. ToolKitBash -- ' + str(ToolKitLib.ext.ToolKit_Desc))
+        # Linter Lib Section
+    elif i.strip() == linterLib.Help.lint_helpcmd1:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_helpcmd2:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help3:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help4:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == g:
+        print('Did you Mean help?')
+
+    elif i.strip() == '':
+        print('Nothing Has Been Detected.')
     else:
         print(i + ' is not recognized as a cmd, .kb, External File, Or Operable Program.')

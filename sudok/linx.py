@@ -20,6 +20,9 @@ class sudokLib():
     s_Switch = 'sudok cpp'
     s_graph = 'sudok graph', 'sudok diag'
     s_Keepover = 'sudok KeepHere'
+    s_Destroy = 'sudo destroy'
+    s_Live = 'sudok Live'
+    
 
 class OperionSetup():
     Oper_Install = 'sudok install operion'
@@ -51,6 +54,7 @@ class ToolKitLib():
         init = '__strt__'
         func_installer = 'TK install'
         func_ExternalTerm = 'tk externalterm'
+        func_help = 'tk__help__'
 
     class Scripts():
         def Install():
@@ -64,3 +68,21 @@ class ToolKitLib():
                 y = open('Addon.json', 'w')
                 y.write('{\n\n\t"Script": true,\n\t"Args": "--add"\n}')
                 y.close()
+
+
+
+class linterLib():
+    class Help():
+        lint_install = 'sudok install lint'
+        lint_helpcmd1 = 'hlep'
+        lint_helpcmd2 = 'ehlp'
+        lint_help3 = 'lhep'
+        lint_help4 = 'hep'
+        lint_help5 = 'lphe'
+    class sudok():
+        class main():
+            sudokS1 = 'sudk script'
+            sudokS2 = 'sudoku scripr'
+            sudokS3 = 'sudoku scripr'
+            sudokS4 = 'sudok scrir'
+            sudokS5 = 'sudo script'
