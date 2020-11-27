@@ -1,12 +1,17 @@
-from KoBashToolkit.sharedtoolkits.buildTools.cus import *
-from addons.KoBashToolKit.toolkitscripts import *
-from addons.operion.OperionLib import *
-from addons.PyGo.pygo_class import * # Functions Is not The Functions we will be using
-import time
+class MyLib():
+    kr_install = 'sudok install MyLib'
+    kr_myFunction = 'MyLib help'
+    kr_quit = 'MyLib quit'
 
 
-time.sleep(3) # Pause and let user read PYGO start message.
-BuildTools.NewPlugin() # addon.json
-BuildTools.LoadingSequence(1) # One Is the Default Message. Will Fallbackw If no number specified. Supported integers, 1,2,3,4,5.
-BuildTools.EnCryp() # Safely Create Addon.
 
+class MyLibFunctions():
+    def OnInstall():
+        print('Alright installing')
+        print('Using ScriptLib 1.0.0') # Give some info on the installing process here!
+        print('Foo') # This is where you Make a .kobash File.
+        x = open('MyLib.kobash', 'w')
+        x.write('MyLib.Scriptable = true;')
+        x.close()
+        print('Cree')
+       	print('Done!')

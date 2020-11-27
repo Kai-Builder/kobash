@@ -1,0 +1,4 @@
+keepClient = true;
+ClientRuntime = true;
+for socket in client;
+	NETQUIRE.Tree.Scripts.Main(arg[], str, scrt-())

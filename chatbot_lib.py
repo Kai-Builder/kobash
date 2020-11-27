@@ -13,7 +13,7 @@ class ChatBot_Understnding():
     cht_why = 'why were you made'
     cht_else = 'do you say anything else'
     cht_what = 'what do you do'
-
+    cht_perk = 'what are the perks of being a member'
 class Chatbot_UserDefinitions():
     myRep = 'i am a custom sentence'
 
@@ -32,4 +32,5 @@ class ChatBot_Responses():
     wRep = 'I Was created by Kai-Builder, And Another dude named Kai-Builder. Haha!'
     whRep = 'I Was made because I Felt People needed  Help With using the prompt. '
     elRep = 'Yeah. There are also Extensions for me. You could find out more By Going to DOCS >> Addons >> Chatbot >> Help'
-
+    uperk = 'The Perks of signing up are\n\n1. You get special Access to the DataBase Library.\n2. You Can Install More Addons\n3. You get more Functionality of the prompt'
+    

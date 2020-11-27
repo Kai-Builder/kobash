@@ -4,6 +4,7 @@ from sudok.linx import *
 import time
 import sys
 import random
+from Handler import *
 sys.version
 op = datetime.now()
 import os
@@ -289,6 +290,10 @@ while True:
                     print(ChatBot_Responses.helpRep)
                 elif ch.strip() == ChatBot_Understnding.cht_why:
                     print(ChatBot_Responses.whRep)
+                elif ch.strip() == ChatBot_Understnding.cht_Who:
+                    print(ChatBot_Responses.wRep)
+        else:
+            print('KoBash Runtime Not installed.')
     elif i.strip() == 'userdata':
         y = Path("UserLogin.py")
         if y.exists():
@@ -296,5 +301,8 @@ while True:
             print('User.Password = ' + passw)
         else:
             print('You cannot use the userdata command without a liscense.')
+
+    elif i.strip() == MyLib.kr_install:
+        MyLibFunctions.OnInstall() 
     else:
         print(i + ' is not recognized as a cmd, .kb, External File, Or Operable Program.')
