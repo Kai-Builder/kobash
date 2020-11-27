@@ -134,7 +134,7 @@ while True:
         print('Integrated Shell 1.0.\nMade For Kobash.')
         while True:
             o = input('$ { ')
-            if o.strip() == IntTerm.int_help:
+            if o.strip() == OperionSetup.Oper_helpCmd:
                 print('**back -- Prints Back What user Says After execution.\n&echostart -- Startup Message.')
     elif i.strip() == 'login':
         x = input('Choose a username: ')

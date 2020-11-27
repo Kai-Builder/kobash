@@ -24,15 +24,16 @@ class OperionSetup():
     Oper_crust = 'op __crust__'
     Oper_crouton = 'op devConsole --InPrompt'
     Oper_info = 'op help Info'
+    oper_DisplayName = 'Operion Lib. -- 1.0'
+    oper_Description = 'Operion Library Contains Easier Prompt Source Access'
 
 class PyGo():
     pygo_install = 'sudok install PyGo'
     pygo_test = 'pygo __test__' # Test If PyGo Works.
     pygo_help = 'pygo _manual_'
-    
-
-
-class IntTerm():
-    int_help = 'help'
-    int_printback = '**back'
-    int_EnableMessageOnStart = '&echoStart'
+    pygo_Description = 'PyGo Is a library For Kobash That contains A Better Integrated terminal, Easier BashExtension, And PreBuilt Functions.'
+    pygo_DisplayName = 'PYGO -- 1.1.334.f.04.2020'
+    class PyGO_IntTerm():
+        int_help = 'help'
+        int_printback = '**back'
+        int_EnableMessageOnStart = '&echoStart'

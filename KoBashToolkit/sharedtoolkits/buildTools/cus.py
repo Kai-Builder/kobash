@@ -1,5 +1,6 @@
 import os
-
+import time
+import random
 class BuildTools():
     def NewPlugin():
         a = open('plugin.json', "w")
@@ -22,5 +23,17 @@ class BuildTools():
         i.close()
     def EnCryp():
         os.mkdir(".Net Encryption")
-        
+        print("Encrypting addon Files..")
+        time.sleep(3)
+        print('Started NET Encryption')
+        print('Encrypted addon Data.')
+    def LoadingSequence(type: int):
+        if type == 1:
+            print('Loading Scripts..')
+            time.sleep(random.randint(0, 10))
+            print('Gathering addon.json...')
+            time.sleep(random.randint(0, 10))
+            print('Starting Python Lib..')
+            time.sleep(random.randint(0, 10))
+            print('Installed Successfully')
 
