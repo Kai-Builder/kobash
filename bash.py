@@ -19,7 +19,7 @@ else:
     print('You Have Not signed into An account yet. This Copy Is Unliscenced.')
     print('You can make one by saying login.')
 while True:
-    i = input(path + '\private> $ .. ')
+    i = input(path + '\session> $ .. ')
     if i.strip() == functions.k_bash_Init:
         print('Creating __init__.py At' + path + "\init.py")
         a = open("init.py", 'w')
@@ -113,7 +113,7 @@ while True:
         time.sleep(3)
         print('Installing Operion Dir..')
         time.sleep(random.randint(5,10))
-        a = open('Operion 1.230.0.bashExtension', "w")
+        a = open('operion.kb', "w")
         a.write("Gathered Data")
         a.close()
         time.sleep(random.randint(5,10))
@@ -122,7 +122,7 @@ while True:
         print('Polishing Files..')
         time.sleep(random.randint(5,10))
     elif i.strip() == OperionSetup.Oper_helpCmd:
-        a = Path("Operion 1.230.0.bashExtension")
+        a = Path("operion.kb")
         if a.exists():
             print('op __crust__ -- Creates a Struct based on User input')
             print('op devConsole --InPrompt -- Integrated Shell Inside KoBash.')
@@ -131,6 +131,7 @@ while True:
             print('op is not recognized as a .bashExtension File.')
 
     elif i.strip() == OperionSetup.Oper_crouton:
+        a = Path("operion")
         print('Integrated Shell 1.0.\nMade For Kobash.')
         while True:
             o = input('$ { ')
@@ -172,7 +173,7 @@ while True:
         print('Defining ScriptPath..')
         time.sleep(random.randint(4, 13))
         print('Finished!')
-        A = open('PygO.kobash', 'w')
+        A = open('pygo.kobash', 'w')
         A.write("Pygo.scriptable == True")
         A.close()
 
@@ -183,5 +184,11 @@ while True:
             print('Thank you for installing pygo.')
         else:
              print(i + ' is not recognized as a cmd, .bashExtension, External File, .kobash, Or Operable Program.')
+
+    elif i.strip() == 'sudok alternative':
+        print('Sudok-Like Extensions (to Sign up go to DOC_2.html.)')
+        print("1. Pygo -- " + str(PyGo.pygo_Description) + "")
+        print('Operion -- ' + str(OperionSetup.oper_Description))
+        print('ToolKitBash -- ')
     else:
-        print(i + ' is not recognized as a cmd, .bashExtension, External File, Or Operable Program.')
+        print(i + ' is not recognized as a cmd, .kb, External File, Or Operable Program.')

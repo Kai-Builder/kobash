@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import time
 import random
 class BuildTools():
@@ -37,3 +38,8 @@ class BuildTools():
             time.sleep(random.randint(0, 10))
             print('Installed Successfully')
 
+
+
+class Prompt():
+    def require(module):
+        a = Path(str(module) + ".kobash")

@@ -1,3 +1,6 @@
+from os import scandir
+
+
 class functions():
     k_help = 'help'
     k_bash_Scripts = 'sudok scripts'
@@ -37,3 +40,27 @@ class PyGo():
         int_help = 'help'
         int_printback = '**back'
         int_EnableMessageOnStart = '&echoStart'
+    class LocalDependencies():
+        class Modules():
+            k_First = 'ModuleType'
+
+
+
+class ToolKitLib():
+    class functions():
+        init = '__strt__'
+        func_installer = 'TK install'
+        func_ExternalTerm = 'tk externalterm'
+
+    class Scripts():
+        def Install():
+            print('To install type sudok install toolkit')
+    class ext():
+        ToolKit_Desc = 'lightweight toolkit made for Extension Building'
+        ToolKit_Display = 'TK-Tools'
+    class InstallerLib():
+        class MyMod():
+            def Create():
+                y = open('Addon.json', 'w')
+                y.write('{\n\n\t"Script": true,\n\t"Args": "--add"\n}')
+                y.close()
