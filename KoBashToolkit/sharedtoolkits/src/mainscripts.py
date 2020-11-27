@@ -22,4 +22,3 @@ class PluginManager():
             Generates WizardError.
             """
             
-PluginManager.PluginWizard.StartWizard('hello', 'pipe install', 'also pipe', 'gg', '3 hours', True)

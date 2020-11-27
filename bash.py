@@ -1,4 +1,5 @@
 from datetime import datetime
+from time import process_time_ns
 from sudok.linx import *
 import time
 import sys
@@ -23,12 +24,13 @@ if a.exists():
         print('Running Operion 1.23.0')
     i = Path("pygo.kobash")
     if i.exists():
-        print('PyGo Powered By ScriptLib.')
+        print('PyGo Powered By ScriptLib 1.03')
     print('full info in either DOCS >> Support >> supportIssues OR say loginIssues')
+    print('-------------------------------------------------------')
     print('Hello, ' + user + ". How are you?")
 else:
     print('You Have Not signed into An account yet. This Copy Is Unliscenced.')
-    print('You can make one by saying login.')
+    print('You can make one by saying signup')
 while True:
     i = input(path + '\session> $ .. ')
     if i.strip() == functions.k_bash_Init:
@@ -152,7 +154,7 @@ while True:
             print('op help info -- Build info.')
         else:
             print('op is not recognized as a .bashExtension File.')
-    elif i.strip() == 'login':
+    elif i.strip() == 'signup':
         x = input('Choose a username: ')
         y = input('Choose a password: ')
         print('Logging you in...')
@@ -197,8 +199,6 @@ while True:
         u = Path("PygO.kobash")
         if u.exists():
             print('Thank you for installing pygo.')
-        else:
-             print(i + ' is not recognized as a cmd, .bashExtension, External File, .kobash, Or Operable Program.')
 
     elif i.strip() == 'sudok alternative':
         print('Sudok-Like Extensions (to Sign up go to DOC_2.html.)')
@@ -259,6 +259,42 @@ while True:
             elif a.strip() == 'op __path__':
                 print('path to?')
                 filetopath = input('> {')
+    elif i.strip() == ChatBotClient.chatbot_install:
+        print('Using PyGo Install Client Version 0.45.0')
+        time.sleep(5)
+        print(path + "\chatbot\.pygoinstaller\scripts Has Been Installed.")
+        time.sleep(random.randint(0, 12))
+        print(path + "\.pygo\Libary Has Been Installed")
+        time.sleep(random.randint(0, 12))
+        print(path + "\msf\script\chatbotclient.exe Has Been installed")
+        time.sleep(random.randint(0, 12))
+        u  = open('dclient.KoRunTime', 'w')
+        u.write('keepClient = true;\nClientRuntime = true;\nfor socket in client;\n\tNETQUIRE.Tree.Scripts.Main(arg[], str, scrt-())')
+        u.close()
+        print(path + "\dclient Has Been Installed.")
+        time.sleep(random.randint(0, 12))
+        print('ChatBot1._3._4323 Successfully Installed.')
+        time.sleep(random.randint(0, 12))
 
+    elif i.strip() == ChatBotClient.chatbot_initializeCommand:
+        o = Path("dclient.KoRunTime")
+        if o.exists():
+            print('Starting KoBash Chatbot runtime..')
+            time.sleep(3)
+            while True:
+                ch = input(path + "> -- .. ")
+                if ch.strip() == ChatBot_Understnding.cht_Hello:
+                    print(ChatBot_Responses.HelloResponse)
+                elif ch.strip() == ChatBot_Understnding.cht_help:
+                    print(ChatBot_Responses.helpRep)
+                elif ch.strip() == ChatBot_Understnding.cht_why:
+                    print(ChatBot_Responses.whRep)
+    elif i.strip() == 'userdata':
+        y = Path("UserLogin.py")
+        if y.exists():
+            print('User.Username = ' + user)
+            print('User.Password = ' + passw)
+        else:
+            print('You cannot use the userdata command without a liscense.')
     else:
         print(i + ' is not recognized as a cmd, .kb, External File, Or Operable Program.')

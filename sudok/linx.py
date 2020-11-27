@@ -1,5 +1,4 @@
-from os import scandir
-
+from chatbot_lib import *
 
 class functions():
     k_help = 'help'
@@ -32,7 +31,7 @@ class OperionSetup():
     Oper_info = 'op help Info'
     oper_DisplayName = 'Operion Lib. -- 1.0'
     oper_Description = 'Operion Library Contains Easier Prompt Source Access'
-    
+
 
 class PyGo():
     pygo_install = 'sudok install PyGo'
@@ -61,7 +60,7 @@ class ToolKitLib():
         def Install():
             print('To install type sudok install toolkit')
     class ext():
-        ToolKit_Desc = 'lightweight toolkit made for Extension Building'
+        ToolKit_Desc = 'lightweight toolkit made for Extension Building, Contains Built-in Debugger, Auto-Compiler, And Much more.'
         ToolKit_Display = 'TK-Tools'
     class InstallerLib():
         class MyMod():
@@ -91,3 +90,16 @@ class linterLib():
             sudokS3 = 'sudoku scripr'
             sudokS4 = 'sudok scrir'
             sudokS5 = 'sudo script'
+
+
+
+
+
+class ChatBotClient():
+    chatbot_install = 'pygo install chatbotClient'
+    chatbot_initializeCommand = 'chatbot initialize'
+    chatbot_knownLines = ChatBot_Understnding
+
+
+
+
