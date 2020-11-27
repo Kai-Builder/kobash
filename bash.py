@@ -14,7 +14,12 @@ bqui = ['What did you do today?', 'What could you do better?', 'Name Every Sport
 a = Path("UserLogin.py")
 if a.exists():
     from UserLogin import *
-    print('Hello, ' + user + ". ")
+    print('FOR LOGGED IN USERS')
+    print('FROM 11/26 TO 11/30 NO MORE VERSIONS WILL BE UPDATED AND SUPPORT WILL END UNTIL AFTER.')
+    print('THE REASON IS THAT I NEED TO UPDATE THE LOGIN SYSTEM AND THE WAY DATA IS EXCHANGED. THANKS!')
+    time.sleep(1)
+    print('full info in either DOCS >> Support >> supportIssues OR say loginIssues')
+    print('Hello, ' + user + ". How are you?")
 else:
     print('You Have Not signed into An account yet. This Copy Is Unliscenced.')
     print('You can make one by saying login.')
