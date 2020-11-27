@@ -70,3 +70,6 @@ Now All you need to do is Start Scripting! Here Are some sample Libraries For yo
 - org -- The `org` Module Contains All Framework-Based Objects Made for Bigger Prompt Extensions.
 - sub.linx -- The `linx` Module Contains all functionalities for the Commands!
 - KoBashToolKit.engine -- The `Engine` Module is used By the scripting engine for Main Script.
+# News
+- FROM 11/26 TO 11/30 THERE WILL BE MATINENCE UPDATES MEANING NO MORE VERSIONS. 
+- THERE WILL BE MULTIPLE CHANGES TO THE WAY USERS LOG IN, THE WAY INFO IS STORED, AND MORE.
