@@ -222,6 +222,16 @@ while True:
         print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
     elif i.strip() == linterLib.Help.lint_help4:
         print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help5:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help6:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help7:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help8:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
+    elif i.strip() == linterLib.Help.lint_help9:
+        print('Incoming Interference to KOBASH, \nMESSAGE: Did you mean, "help" ?\n\nHOSTNAME: LintLib 1.0v')
     elif i.strip() == g:
         print('Did you Mean help?')
 

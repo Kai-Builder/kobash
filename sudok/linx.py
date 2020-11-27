@@ -79,6 +79,10 @@ class linterLib():
         lint_help3 = 'lhep'
         lint_help4 = 'hep'
         lint_help5 = 'lphe'
+        lint_help6 = 'helh'
+        lint_help7 = 'lphl'
+        lint_help8 = 'lhpe'
+        lint_help9 = 'hlpe'
     class sudok():
         class main():
             sudokS1 = 'sudk script'
